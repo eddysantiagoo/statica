@@ -118,34 +118,22 @@ export default function BrandSeoSection({ data }: BrandSeoSectionProps) {
             <h3 className="text-2xl font-bold text-center mb-8">
               Repuestos {data.brandName} en tu Ciudad
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {data.locations.map((location) => (
-                <Card 
-                  key={location.city} 
-                  className="hover:shadow-lg transition-shadow border-l-4"
-                  style={{ borderLeftColor: data.brandColor }}
-                >
-                  <CardContent className="p-5">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-blue-500/10 rounded-lg">
-                        <MapPin className="h-5 w-5 text-blue-600" />
+                <Card key={location.city} className="hover:shadow-md transition-shadow py-0">
+                  <CardContent className="p-6">
+                    <div className="mb-4">
+                      <div className="flex items-center gap-2 mb-1">
+                        <MapPin className="h-4 w-4 text-muted-foreground" />
+                        <h4 className="font-bold text-lg">{location.city}</h4>
                       </div>
-                      <div>
-                        <h4 className="font-bold text-base">
-                          {location.city}
-                        </h4>
-                        <p className="text-xs text-muted-foreground">{location.region}</p>
-                      </div>
+                      <p className="text-sm text-muted-foreground ml-6">{location.region}</p>
                     </div>
-                    <div className="flex flex-wrap gap-1.5 mt-3">
+                    <div className="flex flex-wrap gap-2">
                       {location.coverage.map((area, idx) => (
                         <span
                           key={idx}
-                          className="px-2 py-1 rounded-md text-xs"
-                          style={{
-                            backgroundColor: `${data.brandColor}20`,
-                            color: data.brandColor
-                          }}
+                          className="px-2.5 py-1 rounded-md text-xs font-medium bg-secondary text-secondary-foreground"
                         >
                           {area}
                         </span>
