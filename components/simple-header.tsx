@@ -14,15 +14,15 @@ export function SimpleHeader() {
 
   const links = [
     {
-      label: "Features",
+      label: "Características",
       href: "#",
     },
     {
-      label: "Pricing",
+      label: "Precios",
       href: "#",
     },
     {
-      label: "About",
+      label: "Acerca de",
       href: "#",
     },
   ];
@@ -66,8 +66,8 @@ export function SimpleHeader() {
             </a>
           ))}
           <ModeToggle />
-          <Button variant="outline">Sign In</Button>
-          <Button>Get Started</Button>
+          <Button variant="outline">Iniciar Sesión</Button>
+          <Button>Comenzar</Button>
         </div>
         <Sheet open={open} onOpenChange={setOpen}>
           <Button size="icon" variant="outline" className="lg:hidden">
@@ -97,8 +97,8 @@ export function SimpleHeader() {
               ))}
             </div>
             <SheetFooter>
-              <Button variant="outline">Sign In</Button>
-              <Button>Get Started</Button>
+              <Button variant="outline">Iniciar Sesión</Button>
+              <Button>Comenzar</Button>
             </SheetFooter>
           </SheetContent>
         </Sheet>

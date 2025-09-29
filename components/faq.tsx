@@ -9,32 +9,32 @@ import {
 const faqData = {
   general: [
     {
-      question: "What is this platform?",
-      answer: "This is a modern platform designed to help you achieve your goals efficiently."
+      question: "¿Qué es esta plataforma?",
+      answer: "Esta es una plataforma moderna diseñada para ayudarte a alcanzar tus objetivos de manera eficiente."
     },
     {
-      question: "How do I get started?",
-      answer: "Simply sign up for an account and follow our guided onboarding process."
+      question: "¿Cómo empiezo?",
+      answer: "Simplemente crea una cuenta y sigue nuestro proceso de incorporación guiado."
     }
   ],
   features: [
     {
-      question: "What features are available?",
-      answer: "We offer a comprehensive suite of features including analytics, automation, and collaboration tools."
+      question: "¿Qué características están disponibles?",
+      answer: "Ofrecemos un conjunto completo de características que incluyen análisis, automatización y herramientas de colaboración."
     },
     {
-      question: "Can I customize the platform?",
-      answer: "Yes, the platform is fully customizable to meet your specific needs."
+      question: "¿Puedo personalizar la plataforma?",
+      answer: "Sí, la plataforma es totalmente personalizable para satisfacer tus necesidades específicas."
     }
   ],
   technical: [
     {
-      question: "What technologies do you use?",
-      answer: "We use modern web technologies including React, Next.js, and TypeScript."
+      question: "¿Qué tecnologías utilizan?",
+      answer: "Utilizamos tecnologías web modernas como React, Next.js y TypeScript."
     },
     {
-      question: "Is there an API available?",
-      answer: "Yes, we provide a comprehensive REST API for integrations."
+      question: "¿Hay una API disponible?",
+      answer: "Sí, proporcionamos una API REST completa para integraciones."
     }
   ]
 }
@@ -45,10 +45,10 @@ export default function FAQ() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-            Frequently Asked Questions
+            Preguntas Frecuentes
           </h2>
           <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Find answers to common questions about our platform
+            Encuentra respuestas a preguntas comunes sobre nuestra plataforma
           </p>
         </div>
 
@@ -56,8 +56,8 @@ export default function FAQ() {
           <Tabs defaultValue="general" className="w-full">
             <TabsList className="grid w-full grid-cols-3">
               <TabsTrigger value="general">General</TabsTrigger>
-              <TabsTrigger value="features">Features</TabsTrigger>
-              <TabsTrigger value="technical">Technical</TabsTrigger>
+              <TabsTrigger value="features">Características</TabsTrigger>
+              <TabsTrigger value="technical">Técnico</TabsTrigger>
             </TabsList>
             {Object.entries(faqData).map(([category, questions]) => (
               <TabsContent key={category} value={category}>
