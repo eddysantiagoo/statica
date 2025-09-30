@@ -32,7 +32,8 @@ export function SimpleHeader() {
         <div className="flex items-center gap-2">
           <Link
             className="flex flex-col place-items-end items-center relative"
-            href={`/`}
+            href={`/repuestos-caterpillar-medellin`}
+            prefetch={false}
           >
             <div className="flex items-center">
               <Image

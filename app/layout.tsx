@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
@@ -108,6 +109,7 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
 
       <body className={inter.className}>
+        {/* Preload eliminado: todas las imágenes se cargan localmente sin necesidad de forzar */}
         <WebsiteJsonLd />
         <OrganizationJsonLd />
         <ThemeProvider

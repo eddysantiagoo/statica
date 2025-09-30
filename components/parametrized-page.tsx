@@ -47,12 +47,15 @@ export default function ParametrizedPage({ pageData, brandData }: ParametrizedPa
               </ul>
             </div>
              <div className="relative aspect-video bg-muted rounded-lg overflow-hidden">
-               <Image
-                 src={pageData.whyOriginal.image}
-                 alt={pageData.whyOriginal.imageAlt}
-                 fill
-                 className="object-cover"
-               />
+             <Image
+               src={pageData.whyOriginal.image}
+               alt={pageData.whyOriginal.imageAlt}
+               fill
+               priority
+               quality={70}
+               sizes="(min-width: 1024px) 50vw, 100vw"
+               className="object-cover"
+             />
              </div>
           </div>
         </div>
@@ -89,6 +92,9 @@ export default function ParametrizedPage({ pageData, brandData }: ParametrizedPa
                     src={c.image}
                     alt={c.title}
                     fill
+                    loading="lazy"
+                    quality={65}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     className="object-cover"
                   />
                 </div>
@@ -113,6 +119,9 @@ export default function ParametrizedPage({ pageData, brandData }: ParametrizedPa
                src={pageData.coverage.image}
                alt={pageData.coverage.imageAlt}
                fill
+               loading="lazy"
+               quality={65}
+               sizes="(min-width: 1024px) 50vw, 100vw"
                className="object-cover"
              />
            </div>
@@ -142,6 +151,9 @@ export default function ParametrizedPage({ pageData, brandData }: ParametrizedPa
                src={pageData.cta1.image}
                alt={pageData.cta1.imageAlt}
                fill
+               loading="lazy"
+               quality={65}
+               sizes="(min-width: 1024px) 33vw, 80vw"
                className="object-cover"
              />
            </div>
@@ -181,12 +193,15 @@ export default function ParametrizedPage({ pageData, brandData }: ParametrizedPa
         <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
           <div className="flex items-center gap-5">
              <div className="relative h-24 w-24 md:h-28 md:w-28 flex-shrink-0">
-               <Image
-                 src={pageData.cta2.image}
-                 alt={pageData.cta2.imageAlt}
-                 fill
-                 className="object-cover"
-               />
+              <Image
+                src={pageData.cta2.image}
+                alt={pageData.cta2.imageAlt}
+                fill
+                loading="lazy"
+                quality={65}
+                sizes="(min-width: 1024px) 12vw, 25vw"
+                className="object-cover"
+              />
              </div>
             <div>
               <p className={`text-xs uppercase tracking-widest font-semibold ${
