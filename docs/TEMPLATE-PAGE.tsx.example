@@ -1,0 +1,78 @@
+/**
+ * TEMPLATE PARA NUEVA PÁGINA DE MARCA + CIUDAD
+ * 
+ * Instrucciones:
+ * 1. Copiar este archivo a: app/repuestos-[marca]-[ciudad]/page.tsx
+ * 2. Reemplazar [MARCA] con la marca (ej: komatsu, volvo)
+ * 3. Reemplazar [CIUDAD] con la ciudad (ej: Bogotá, Cali)
+ * 4. Verificar que la ciudad existe en brandData.locations
+ * 
+ * Ejemplo:
+ * app/repuestos-komatsu-bogota/page.tsx
+ */
+
+import { Metadata } from "next";
+import { generateBrandCityMetadata } from "@/lib/metadata-generator";
+import ParametrizedPage from "@/components/parametrized-page";
+import { [MARCA]PageData } from "@/data/pages/[MARCA]-page";
+import { [MARCA]Data } from "@/data/brands/[MARCA]";
+
+// ✅ Metadata SEO automática para [MARCA] en [CIUDAD]
+export const metadata: Metadata = generateBrandCityMetadata(
+  [MARCA]Data, 
+  "[CIUDAD]" // ⚠️ Debe coincidir exactamente con brandData.locations[].city
+);
+
+export default function [MARCA_MAYUS][CIUDAD_MAYUS]Page() {
+  return (
+    <ParametrizedPage 
+      pageData={[MARCA]PageData} 
+      brandData={[MARCA]Data} 
+    />
+  );
+}
+
+
+/**
+ * EJEMPLO REAL: Komatsu Bogotá
+ * 
+ * Archivo: app/repuestos-komatsu-bogota/page.tsx
+ */
+
+/*
+import { Metadata } from "next";
+import { generateBrandCityMetadata } from "@/lib/metadata-generator";
+import ParametrizedPage from "@/components/parametrized-page";
+import { komatsuPageData } from "@/data/pages/komatsu-page";
+import { komatsuData } from "@/data/brands/komatsu";
+
+export const metadata: Metadata = generateBrandCityMetadata(
+  komatsuData, 
+  "Bogotá"
+);
+
+export default function KomatsuBogotaPage() {
+  return (
+    <ParametrizedPage 
+      pageData={komatsuPageData} 
+      brandData={komatsuData} 
+    />
+  );
+}
+*/
+
+
+/**
+ * METADATA GENERADA AUTOMÁTICAMENTE:
+ * 
+ * Title:       "Repuestos Komatsu Bogotá | Gestor de Partes Cundinamarca"
+ * Description: "Gestor de Partes, distribuidor autorizado de repuestos Komatsu en Bogotá..."
+ * Keywords:    [12+ keywords específicas de ciudad]
+ * OG Image:    "/komatsu/og-bogota.jpg"
+ * Canonical:   "https://gestordepartes.com/repuestos-komatsu-bogota"
+ * 
+ * ⚠️ IMPORTANTE:
+ * - La ciudad debe existir en komatsuData.locations
+ * - Crear imagen OG en: public/komatsu/og-bogota.jpg (1200x630)
+ * - Agregar URL al sitemap: app/sitemap.ts
+ */

@@ -8,10 +8,10 @@ import { WebsiteJsonLd, OrganizationJsonLd } from "@/components/json-ld";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const appName = "Statica";
+const appName = "Gestor de Partes";
 const appDescription =
-  "Plataforma web moderna para soluciones innovadoras. Transforma tu flujo de trabajo con nuestras características de vanguardia y experiencia de usuario perfecta.";
-const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://statica.com";
+  "Gestor de Partes - Distribuidor autorizado de repuestos para maquinaria pesada en Colombia. Caterpillar, Komatsu, Volvo y más marcas. Stock permanente en Medellín, Bogotá, Cali y toda Colombia.";
+const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://gestordepartes.com";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   },
   description: appDescription,
   keywords: [
-    "plataforma web",
-    "soluciones modernas",
-    "tecnología innovadora",
-    "transformación digital",
-    "automatización de flujo de trabajo",
-    "next.js",
-    "react",
-    "typescript",
+    "gestor de partes",
+    "repuestos maquinaria pesada",
+    "repuestos caterpillar colombia",
+    "repuestos komatsu",
+    "repuestos volvo",
+    "distribuidor autorizado",
+    "repuestos originales",
+    "maquinaria pesada colombia",
   ],
   authors: [{ name: appName, url: appUrl }],
   creator: appName,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: appName,
     description: appDescription,
     images: [`${appUrl}/og-image.png`],
-    creator: "@statica",
+    creator: "@gestordepartes",
   },
   robots: {
     index: true,

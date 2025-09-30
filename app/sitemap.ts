@@ -1,38 +1,54 @@
 import { MetadataRoute } from 'next'
 
-const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://statica.com"
+const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://gestordepartes.com"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    // Páginas de Caterpillar por ciudad
     {
-      url: appUrl,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1,
-    },
-    {
-      url: `${appUrl}/acerca-de`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${appUrl}/caracteristicas`,
+      url: `${appUrl}/repuestos-caterpillar-medellin`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 1.0,
     },
     {
-      url: `${appUrl}/precios`,
+      url: `${appUrl}/repuestos-caterpillar-bogota`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.9,
+      priority: 1.0,
     },
     {
-      url: `${appUrl}/contacto`,
+      url: `${appUrl}/repuestos-caterpillar-cali`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      changeFrequency: 'weekly',
+      priority: 1.0,
     },
+    {
+      url: `${appUrl}/repuestos-caterpillar-barranquilla`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${appUrl}/repuestos-caterpillar-bucaramanga`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${appUrl}/repuestos-caterpillar-pereira`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    
+    // Agregar más marcas y ciudades según necesites
+    // Ejemplo:
+    // {
+    //   url: `${appUrl}/repuestos-komatsu-medellin`,
+    //   lastModified: new Date(),
+    //   changeFrequency: 'weekly',
+    //   priority: 1.0,
+    // },
   ]
 }
