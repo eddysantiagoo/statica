@@ -70,7 +70,15 @@ export function SimpleHeader() {
           <Button>Comenzar</Button>
         </div>
         <Sheet open={open} onOpenChange={setOpen}>
-          <Button size="icon" variant="outline" className="lg:hidden">
+          <Button 
+            size="icon" 
+            variant="outline" 
+            className="lg:hidden"
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+            aria-haspopup="menu"
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+          >
             <MenuToggle
               strokeWidth={2.5}
               open={open}
@@ -82,6 +90,7 @@ export function SimpleHeader() {
             className="bg-background/95 supports-[backdrop-filter]:bg-background/80 gap-0 backdrop-blur-lg"
             showClose={false}
             side="left"
+            id="mobile-menu"
           >
             <div className="grid gap-y-2 overflow-y-auto px-4 pt-12 pb-5">
               {links.map((link) => (

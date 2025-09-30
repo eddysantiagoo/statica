@@ -34,37 +34,40 @@ export default function Footer() {
       <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-background/5 to-transparent pointer-events-none" />
       <div className="container relative px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {Object.entries(footerLinks).map(([category, links]) => (
-            <div key={category} className="space-y-3 text-center">
-              <h4 className="text-base font-semibold">{category}</h4>
-              <ul className="space-y-2">
-                {links.map((link) => (
-                  <li key={link.name}>
-                    <Link 
-                      href={link.href}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                      {...(link.external
-                        ? { target: "_blank", rel: "noopener noreferrer" }
-                        : {}
-                      )}
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {Object.entries(footerLinks).map(([category, links]) => {
+            const id = `footer-${category.toLowerCase().replaceAll(" ", "-")}`
+            return (
+              <nav key={category} className="space-y-3 text-center" aria-labelledby={id}>
+                <p id={id} role="heading" aria-level={2} className="text-base font-semibold">{category}</p>
+                <ul className="space-y-2" aria-labelledby={id}>
+                  {links.map((link) => (
+                    <li key={link.name}>
+                      <Link 
+                        href={link.href}
+                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                        {...(link.external
+                          ? { target: "_blank", rel: "noopener noreferrer" }
+                          : {}
+                        )}
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )
+          })}
         </div>
         
         <div className="flex flex-col items-center justify-center mt-12 pt-8 border-t space-y-4">
           <div className="flex items-center space-x-2">
             <ThumbsUp className="h-6 w-6" />
-            <span className="font-semibold">Statica</span>
+            <span className="font-semibold">Gestor de Partes</span>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Statica. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} Gestor de Partes. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
