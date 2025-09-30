@@ -29,7 +29,7 @@ export default function BrandSeoSection({ data }: BrandSeoSectionProps) {
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": `Catálogo Repuestos ${data.brandName}`,
-      "itemListElement": data.productCategories.map((part, index) => ({
+      "itemListElement": data.productCategories.map((part) => ({
         "@type": "OfferCatalog",
         "name": part.category,
         "itemListElement": part.items.map(item => ({

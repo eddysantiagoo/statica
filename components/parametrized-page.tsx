@@ -5,7 +5,6 @@ import { Card } from "@/components/ui/card";
 import { PageData } from "@/data/types";
 import BrandSeoSection from "@/components/brand-seo-section";
 import { BrandData } from "@/data/types";
-import FAQ from "@/components/faq";
 
 interface ParametrizedPageProps {
   pageData: PageData;

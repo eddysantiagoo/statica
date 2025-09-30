@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Grid2x2PlusIcon } from "lucide-react";
 import { Sheet, SheetContent, SheetFooter } from "@/components/sheet";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { MenuToggle } from "@/components/menu-toggle";
@@ -59,6 +58,7 @@ export function SimpleHeader() {
         <div className="hidden items-center gap-2 lg:flex">
           {links.map((link) => (
             <a
+              key={link.href}
               className={buttonVariants({ variant: "ghost" })}
               href={link.href}
             >
@@ -86,6 +86,7 @@ export function SimpleHeader() {
             <div className="grid gap-y-2 overflow-y-auto px-4 pt-12 pb-5">
               {links.map((link) => (
                 <a
+                  key={link.href}
                   className={buttonVariants({
                     variant: "ghost",
                     className: "justify-start",
