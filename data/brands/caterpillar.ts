@@ -8,12 +8,12 @@ export const caterpillarData: BrandData = {
   brandLogo: "/brands/caterpillar-logo.webp",
   
   // SEO
-  metaTitle: "Repuestos Caterpillar Originales en Colombia | Distribuidor Autorizado",
-  metaDescription: "Distribuidor autorizado de repuestos CAT con stock permanente. Servicio a Medellín, Bogotá, Cali y toda Colombia. Garantía de autenticidad.",
+  metaTitle: "Repuestos Caterpillar Colombia | Gestor de Partes Distribuidor Autorizado",
+  metaDescription: "Gestor de Partes, distribuidor autorizado de repuestos Caterpillar en Colombia. Stock permanente CAT en Medellín, Bogotá, Cali. Entrega inmediata y garantía de autenticidad.",
   
   // Contenido del Hero/Header
-  heroTitle: "Repuestos Caterpillar Originales en Colombia",
-  heroDescription: "Distribuidor autorizado de repuestos CAT con stock permanente. Servicio a Medellín, Bogotá, Cali, Barranquilla y todas las ciudades de Colombia. Garantía de autenticidad y compatibilidad perfecta con tu maquinaria Caterpillar.",
+  heroTitle: "Gestor de Partes - Repuestos Caterpillar Originales Colombia",
+  heroDescription: "Gestor de Partes, distribuidor autorizado de repuestos CAT con stock permanente en Medellín, Bogotá, Cali, Barranquilla y todas las ciudades de Colombia. Garantía de autenticidad Gestor de Partes y compatibilidad perfecta con tu maquinaria Caterpillar.",
   
   // Categorías de productos
   productCategories: [
@@ -122,14 +122,14 @@ export const caterpillarData: BrandData = {
   seoContent: {
     sections: [
       {
-        title: "Repuestos CAT en Medellín y Antioquia",
+        title: "Gestor de Partes - Repuestos CAT en Medellín y Antioquia",
         icon: "wrench",
-        content: "Como distribuidores autorizados de repuestos Caterpillar en Medellín, ofrecemos el más amplio inventario de piezas CAT en Antioquia. Atendemos proyectos de construcción, minería y obras civiles con entrega inmediata en Medellín, Rionegro, Apartadó y todo el departamento. Nuestros repuestos Cat originales incluyen cilindros hidráulicos, filtros, tren de rodaje y componentes de motor."
+        content: "Gestor de Partes, como distribuidor autorizado de repuestos Caterpillar en Medellín, ofrece el más amplio inventario de piezas CAT en Antioquia. En Gestor de Partes atendemos proyectos de construcción, minería y obras civiles con entrega inmediata en Medellín, Rionegro, Apartadó y todo el departamento. Nuestros repuestos Cat originales Gestor de Partes incluyen cilindros hidráulicos, filtros, tren de rodaje y componentes de motor."
       },
       {
-        title: "Proveedor Caterpillar en Bogotá",
+        title: "Gestor de Partes - Proveedor Caterpillar en Bogotá",
         icon: "package",
-        content: "Distribuimos repuestos Caterpillar en Bogotá y toda Cundinamarca con stock permanente. Especializados en repuestos CAT para excavadoras, cargadores frontales, retroexcavadoras y maquinaria pesada. Servicio técnico especializado y asesoría para identificar el repuesto Caterpillar correcto según número de parte y modelo de equipo."
+        content: "Gestor de Partes distribuye repuestos Caterpillar en Bogotá y toda Cundinamarca con stock permanente. Gestor de Partes especializado en repuestos CAT para excavadoras, cargadores frontales, retroexcavadoras y maquinaria pesada. Servicio técnico Gestor de Partes y asesoría para identificar el repuesto Caterpillar correcto según número de parte y modelo de equipo."
       }
     ],
     features: [

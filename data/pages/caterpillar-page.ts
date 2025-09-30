@@ -3,44 +3,44 @@ import { PageData } from "../types";
 export const caterpillarPageData: PageData = {
   // Hero Section
   hero: {
-    title: "Bienvenido a Nuestra Plataforma",
+    title: "Repuestos Caterpillar Originales | Gestor de Partes",
     description:
-      "Descubre características increíbles y transforma tu flujo de trabajo con nuestra solución innovadora.",
-    primaryButton: "Saber Más",
-    secondaryButton: "Ver Demo",
+      "Gestor de Partes, tu distribuidor autorizado de repuestos Caterpillar en Colombia. Stock permanente, entrega inmediata y garantía de autenticidad en todas las ciudades.",
+    primaryButton: "Ver Catálogo",
+    secondaryButton: "Contactar Ahora",
   },
 
   // Sección "¿Por qué comprar repuestos originales?"
   whyOriginal: {
-    title: "¿Por qué comprar Repuestos Cat originales?",
+    title: "¿Por qué comprar Repuestos Cat originales en Gestor de Partes?",
     image: "/caterpillar/hero.png",
-    imageAlt: "Repuestos Cat",
+    imageAlt: "Repuestos Cat - Gestor de Partes",
     benefits: [
-      "Diseñados y probados según estándares Cat para máximo desempeño.",
-      "Mayor vida útil, confiabilidad y garantía de compatibilidad.",
-      "Disponibilidad nacional y respaldo técnico especializado.",
-      "Protegen la inversión y reducen paradas no programadas.",
+      "Gestor de Partes garantiza repuestos diseñados y probados según estándares Cat para máximo desempeño.",
+      "Mayor vida útil, confiabilidad y garantía de compatibilidad respaldada por Gestor de Partes.",
+      "Disponibilidad nacional con Gestor de Partes y respaldo técnico especializado en toda Colombia.",
+      "Protegen tu inversión y reducen paradas no programadas con el respaldo de Gestor de Partes.",
     ],
   },
 
   // Beneficios de usar originales
   benefits: {
-    title: "Beneficios de usar repuestos originales Cat",
+    title: "Beneficios de comprar en Gestor de Partes",
     items: [
       {
-        title: "Rendimiento y seguridad",
+        title: "Rendimiento y seguridad Cat",
         description:
-          "Piezas diseñadas para trabajar en condiciones exigentes manteniendo el desempeño y la seguridad de tu máquina.",
+          "En Gestor de Partes ofrecemos piezas Cat diseñadas para trabajar en condiciones exigentes, manteniendo el desempeño y la seguridad de tu máquina.",
       },
       {
-        title: "Disponibilidad y respaldo",
+        title: "Disponibilidad inmediata",
         description:
-          "Cadena de suministro y soporte de especialistas para asegurar continuidad operativa.",
+          "Gestor de Partes cuenta con stock permanente y cadena de suministro nacional para asegurar continuidad operativa.",
       },
       {
         title: "Costo total optimizado",
         description:
-          "Mayor duración y menor riesgo de falla reducen el costo total de propiedad.",
+          "Con Gestor de Partes obtienes mayor duración y menor riesgo de falla, reduciendo el costo total de propiedad.",
       },
     ],
   },
@@ -96,11 +96,11 @@ export const caterpillarPageData: PageData = {
 
   // Cobertura nacional
   coverage: {
-    title: "Cobertura nacional",
+    title: "Gestor de Partes - Cobertura Nacional",
     description:
-      "Atención a nivel nacional con puntos de servicio, inventario y logística para llegar a tus operaciones donde estés. Soporte técnico y asesoría para seleccionar el repuesto adecuado.",
+      "Gestor de Partes te ofrece atención a nivel nacional con puntos de servicio, inventario permanente y logística especializada para llegar a tus operaciones donde estés. Soporte técnico Gestor de Partes y asesoría especializada para seleccionar el repuesto Caterpillar adecuado.",
     image: "/caterpillar/cobertura.jpg",
-    imageAlt: "Cobertura nacional",
+    imageAlt: "Gestor de Partes - Cobertura nacional Caterpillar",
   },
 
   // CTA 1 - Compra en línea
